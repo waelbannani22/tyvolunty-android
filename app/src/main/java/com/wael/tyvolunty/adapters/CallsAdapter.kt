@@ -29,6 +29,7 @@ class CallsAdapter (var calls:MutableList<Calls>):
             Glide.with(this)
                 .load(path)
                 .into(resto_img)
+            // listner
             resto_name.setText(calls[position].name)
             taptores.setOnClickListener {
                 val activity = holder.itemView.context as Activity

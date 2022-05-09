@@ -85,11 +85,7 @@ class HomeRecruiter : Fragment(), CellClickListener {
 
 
     override fun onCellClickListener(i:String) {
-        /*   val fragmenttt = listCalls()
-           val transaction = fragmentManager?.beginTransaction()
-           transaction?.replace(R.id.framehome,fragmenttt)?.commit()
 
-         */
         val intent = Intent(context, CallsRecruiter::class.java)
         startActivity(intent)
 
