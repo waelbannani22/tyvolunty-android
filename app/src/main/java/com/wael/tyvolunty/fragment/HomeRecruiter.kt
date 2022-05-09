@@ -85,7 +85,7 @@ class HomeRecruiter : Fragment(), CellClickListener {
 
 
     override fun onCellClickListener(i:String) {
-
+//go to
         val intent = Intent(context, CallsRecruiter::class.java)
         startActivity(intent)
 
