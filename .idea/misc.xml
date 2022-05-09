@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/leowa/OneDrive/Documents/tyvolunty/app/src/main/res/drawable/gradientsplash.xml" value="0.2703125" />
+        <entry key="..\:/Users/leowa/OneDrive/Documents/tyvolunty/app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.2703125" />
+        <entry key="..\:/Users/leowa/OneDrive/Documents/tyvolunty/app/src/main/res/drawable/ic_email.xml" value="0.13385416666666666" />
+        <entry key="..\:/Users/leowa/OneDrive/Documents/tyvolunty/app/src/main/res/layout/activity_acceuil_recruiter.xml" value="0.125" />
+        <entry key="..\:/Users/leowa/OneDrive/Documents/tyvolunty/app/src/main/res/layout/activity_accueil.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/leowa/OneDrive/Documents/tyvolunty/app/src/main/res/layout/activity_accueil_recruiter.xml" value="0.125" />
+        <entry key="..\:/Users/leowa/OneDrive/Documents/tyvolunty/app/src/main/res/layout/activity_calls.xml" value="0.2" />
+        <entry key="..\:/Users/leowa/OneDrive/Documents/tyvolunty/app/src/main/res/layout/activity_calls_recruiter.xml" value="0.125" />
+        <entry key="..\:/Users/leowa/OneDrive/Documents/tyvolunty/app/src/main/res/layout/activity_choose.xml" value="0.264" />
+        <entry key="..\:/Users/leowa/OneDrive/Documents/tyvolunty/app/src/main/res/layout/activity_confirmpassword.xml" value="0.136" />
+        <entry key="..\:/Users/leowa/OneDrive/Documents/tyvolunty/app/src/main/res/layout/activity_detail_call.xml" value="0.264" />
+        <entry key="..\:/Users/leowa/OneDrive/Documents/tyvolunty/app/src/main/res/layout/activity_empty.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/leowa/OneDrive/Documents/tyvolunty/app/src/main/res/layout/activity_forgetpassword.xml" value="0.24010416666666667" />
+        <entry key="..\:/Users/leowa/OneDrive/Documents/tyvolunty/app/src/main/res/layout/activity_login.xml" value="0.2" />
+        <entry key="..\:/Users/leowa/OneDrive/Documents/tyvolunty/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/leowa/OneDrive/Documents/tyvolunty/app/src/main/res/layout/activity_popover.xml" value="0.2" />
+        <entry key="..\:/Users/leowa/OneDrive/Documents/tyvolunty/app/src/main/res/layout/activity_signin_recruiter.xml" value="0.125" />
+        <entry key="..\:/Users/leowa/OneDrive/Documents/tyvolunty/app/src/main/res/layout/activity_signup.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/leowa/OneDrive/Documents/tyvolunty/app/src/main/res/layout/activity_signup_recruiter.xml" value="0.264" />
+        <entry key="..\:/Users/leowa/OneDrive/Documents/tyvolunty/app/src/main/res/layout/activity_splashscreen.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/leowa/OneDrive/Documents/tyvolunty/app/src/main/res/layout/each_category_item.xml" value="0.1" />
+        <entry key="..\:/Users/leowa/OneDrive/Documents/tyvolunty/app/src/main/res/layout/fragment_blank.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/leowa/OneDrive/Documents/tyvolunty/app/src/main/res/layout/fragment_home.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/leowa/OneDrive/Documents/tyvolunty/app/src/main/res/layout/fragment_home_recruiter.xml" value="0.1109375" />
+        <entry key="..\:/Users/leowa/OneDrive/Documents/tyvolunty/app/src/main/res/layout/fragment_update_volunteer.xml" value="0.1828125" />
+        <entry key="..\:/Users/leowa/OneDrive/Documents/tyvolunty/app/src/main/res/layout/fragmentvolunteer.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/leowa/OneDrive/Documents/tyvolunty/app/src/main/res/layout/item_add.xml" value="0.1" />
+        <entry key="..\:/Users/leowa/OneDrive/Documents/tyvolunty/app/src/main/res/layout/item_addm.xml" value="0.264" />
+        <entry key="..\:/Users/leowa/OneDrive/Documents/tyvolunty/app/src/main/res/layout/item_age.xml" value="0.15885416666666666" />
+        <entry key="..\:/Users/leowa/OneDrive/Documents/tyvolunty/app/src/main/res/layout/item_agem.xml" value="0.1828125" />
+        <entry key="..\:/Users/leowa/OneDrive/Documents/tyvolunty/app/src/main/res/layout/item_bulle.xml" value="0.176" />
+        <entry key="..\:/Users/leowa/OneDrive/Documents/tyvolunty/app/src/main/res/layout/item_email.xml" value="0.15885416666666666" />
+        <entry key="..\:/Users/leowa/OneDrive/Documents/tyvolunty/app/src/main/res/layout/item_image.xml" value="0.15885416666666666" />
+        <entry key="..\:/Users/leowa/OneDrive/Documents/tyvolunty/app/src/main/res/layout/item_imagem.xml" value="0.1296875" />
+        <entry key="..\:/Users/leowa/OneDrive/Documents/tyvolunty/app/src/main/res/layout/item_info.xml" value="0.15885416666666666" />
+        <entry key="..\:/Users/leowa/OneDrive/Documents/tyvolunty/app/src/main/res/layout/item_infom.xml" value="0.1828125" />
+        <entry key="..\:/Users/leowa/OneDrive/Documents/tyvolunty/app/src/main/res/layout/item_mailm.xml" value="0.16" />
+        <entry key="..\:/Users/leowa/OneDrive/Documents/tyvolunty/app/src/main/res/layout/list_calls_fragment.xml" value="0.2" />
+        <entry key="..\:/Users/leowa/OneDrive/Documents/tyvolunty/app/src/main/res/layout/listallfrag.xml" value="0.2" />
+        <entry key="..\:/Users/leowa/OneDrive/Documents/tyvolunty/app/src/main/res/layout/progressbar.xml" value="0.15885416666666666" />
+        <entry key="..\:/Users/leowa/OneDrive/Documents/tyvolunty/app/src/main/res/layout/toolbarprofile.xml" value="0.264" />
+        <entry key="..\:/Users/leowa/OneDrive/Documents/tyvolunty/app/src/main/res/menu/buttom_navigation.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/leowa/OneDrive/Documents/tyvolunty/app/src/main/res/menu/menu1.xml" value="0.12291666666666666" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

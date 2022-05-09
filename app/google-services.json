@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "509153588648",
+    "project_id": "tyvolunty",
+    "storage_bucket": "tyvolunty.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:509153588648:android:6f9f36e9d1d6b66f52999d",
+        "android_client_info": {
+          "package_name": "com.wael.tyvolunty"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "509153588648-njnqj02ovp92tdd4feibdseeciepfqst.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCUplUXstEtLPLnu3FIZa1cMcMz4c4pCZQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "509153588648-njnqj02ovp92tdd4feibdseeciepfqst.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
