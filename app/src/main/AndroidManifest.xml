@@ -14,15 +14,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ProfileUI">
         <activity
+            android:name=".DetailCallRecruiter"
+            android:exported="false" />
+        <activity
+            android:name=".AddCall"
+            android:exported="false" />
+        <activity
             android:name=".CallsRecruiter"
             android:exported="false" />
         <activity
             android:name=".AccueilRecruiter"
             android:exported="false" />
-        <activity
-            android:name=".AcceuilRecruiter"
-            android:exported="false"
-            android:label="@string/title_activity_acceuil_recruiter" />
         <activity
             android:name=".SigninRecruiter"
             android:exported="false" />

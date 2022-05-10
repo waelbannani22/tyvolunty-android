@@ -1,5 +1,6 @@
 package com.wael.tyvolunty
 
+import android.content.Intent
 import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -9,7 +10,8 @@ import android.widget.Toast
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.bumptech.glide.Glide
-import com.wael.tyvolunty.adapters.CallsAdapter
+
+import com.wael.tyvolunty.adapters.CallsAdapterRecruiter
 import com.wael.tyvolunty.utilis.ApiInterface
 import kotlinx.android.synthetic.main.activity_calls.*
 import kotlinx.android.synthetic.main.activity_calls.progBar
@@ -34,7 +36,10 @@ class CallsRecruiter : AppCompatActivity() {
         linearLayoutManager = LinearLayoutManager(this)
         rv_callsR.layoutManager = linearLayoutManager
         mSharedPref = getSharedPreferences(PREF_NAMER, MODE_PRIVATE);
-
+        fab.setOnClickListener {
+            val mainIntent = Intent(this, AddCall::class.java)
+            startActivity(mainIntent)
+        }
         if(mSharedPref.getString(PHOTOR, "").toString()=="NO PICTURE")
         {
             ProfilImg!!.setImageResource(R.drawable.avtar)
@@ -67,7 +72,7 @@ class CallsRecruiter : AppCompatActivity() {
                     if ( response.code()== 200){
                         progBar.visibility = View.GONE
                         fab.visibility = View.VISIBLE
-                        val adapter = response.body()?.let { CallsAdapter(it) }
+                        val adapter = response.body()?.let { CallsAdapterRecruiter(it) }
                         // This will pass the ArrayList to our Adapter
 
 
