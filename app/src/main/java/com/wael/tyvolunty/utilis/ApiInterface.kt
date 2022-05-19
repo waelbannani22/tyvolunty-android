@@ -4,6 +4,7 @@ import com.google.gson.JsonObject
 import com.wael.tyvolunty.models.Calls
 import com.wael.tyvolunty.models.Recruiter
 import com.wael.tyvolunty.models.Volunteer
+import com.wael.tyvolunty.models.VolunteerCall
 
 import okhttp3.RequestBody
 import org.json.JSONObject
@@ -45,6 +46,21 @@ interface ApiInterface {
     suspend fun signupRecruiter(@Body map : HashMap<String, String> ): Response<JsonObject>
     @POST("/fetchByCategoryandroidRecruiter")
     suspend fun fetchcallsbyrecruiter(@Body map : HashMap<String, String> ): Response<MutableList<Calls>>
+    @POST("/create_callandroid")
+    suspend fun addcall(@Body map : HashMap<String, String> ): Response<JsonObject>
+
+    @POST("/FetchPostsByIdandroid")
+    suspend fun fetchcallbyid(@Body map : HashMap<String, String> ):  Response<MutableList<VolunteerCall>>
+
+    @POST("/fetchUserByIdandroid")
+    suspend fun fetchvolunteerbyid(@Body map : HashMap<String, String> ):  Response<Volunteer>
+
+    @POST("/FetchPostsByIDVDeclineandroid")
+    suspend fun declineVolunteer(@Body map : HashMap<String, String> ): Response<JsonObject>
+
+    @POST("/FetchPostsByIDVACCEPTandroid")
+    suspend fun acceptVolunteer(@Body map : HashMap<String, String> ): Response<JsonObject>
+
     companion object {
 
         //var BASE_URL="http://192.168.1.100:3000"

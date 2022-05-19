@@ -3,9 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/leowa/OneDrive/Documents/tyvolunty/app/src/main/res/drawable/gradient.xml" value="0.12708333333333333" />
         <entry key="..\:/Users/leowa/OneDrive/Documents/tyvolunty/app/src/main/res/drawable/gradientsplash.xml" value="0.2703125" />
+        <entry key="..\:/Users/leowa/OneDrive/Documents/tyvolunty/app/src/main/res/drawable/ic_arrow.xml" value="0.2703125" />
         <entry key="..\:/Users/leowa/OneDrive/Documents/tyvolunty/app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.2703125" />
         <entry key="..\:/Users/leowa/OneDrive/Documents/tyvolunty/app/src/main/res/drawable/ic_email.xml" value="0.13385416666666666" />
+        <entry key="..\:/Users/leowa/OneDrive/Documents/tyvolunty/app/src/main/res/layout/activity_accept_decline.xml" value="0.264" />
         <entry key="..\:/Users/leowa/OneDrive/Documents/tyvolunty/app/src/main/res/layout/activity_acceuil_recruiter.xml" value="0.125" />
         <entry key="..\:/Users/leowa/OneDrive/Documents/tyvolunty/app/src/main/res/layout/activity_accueil.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/leowa/OneDrive/Documents/tyvolunty/app/src/main/res/layout/activity_accueil_recruiter.xml" value="0.125" />
@@ -20,15 +23,18 @@
         <entry key="..\:/Users/leowa/OneDrive/Documents/tyvolunty/app/src/main/res/layout/activity_forgetpassword.xml" value="0.24010416666666667" />
         <entry key="..\:/Users/leowa/OneDrive/Documents/tyvolunty/app/src/main/res/layout/activity_login.xml" value="0.2" />
         <entry key="..\:/Users/leowa/OneDrive/Documents/tyvolunty/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/leowa/OneDrive/Documents/tyvolunty/app/src/main/res/layout/activity_pendinglist.xml" value="0.125" />
         <entry key="..\:/Users/leowa/OneDrive/Documents/tyvolunty/app/src/main/res/layout/activity_popover.xml" value="0.2" />
-        <entry key="..\:/Users/leowa/OneDrive/Documents/tyvolunty/app/src/main/res/layout/activity_signin_recruiter.xml" value="0.125" />
+        <entry key="..\:/Users/leowa/OneDrive/Documents/tyvolunty/app/src/main/res/layout/activity_signin_recruiter.xml" value="0.264" />
         <entry key="..\:/Users/leowa/OneDrive/Documents/tyvolunty/app/src/main/res/layout/activity_signup.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/leowa/OneDrive/Documents/tyvolunty/app/src/main/res/layout/activity_signup_recruiter.xml" value="0.264" />
         <entry key="..\:/Users/leowa/OneDrive/Documents/tyvolunty/app/src/main/res/layout/activity_splashscreen.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/leowa/OneDrive/Documents/tyvolunty/app/src/main/res/layout/diagonnal.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/leowa/OneDrive/Documents/tyvolunty/app/src/main/res/layout/each_category_item.xml" value="0.1" />
         <entry key="..\:/Users/leowa/OneDrive/Documents/tyvolunty/app/src/main/res/layout/fragment_blank.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/leowa/OneDrive/Documents/tyvolunty/app/src/main/res/layout/fragment_home.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/leowa/OneDrive/Documents/tyvolunty/app/src/main/res/layout/fragment_home_recruiter.xml" value="0.1109375" />
+        <entry key="..\:/Users/leowa/OneDrive/Documents/tyvolunty/app/src/main/res/layout/fragment_recruiter.xml" value="0.264" />
         <entry key="..\:/Users/leowa/OneDrive/Documents/tyvolunty/app/src/main/res/layout/fragment_update_volunteer.xml" value="0.1828125" />
         <entry key="..\:/Users/leowa/OneDrive/Documents/tyvolunty/app/src/main/res/layout/fragmentvolunteer.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/leowa/OneDrive/Documents/tyvolunty/app/src/main/res/layout/item_add.xml" value="0.1" />
@@ -42,8 +48,10 @@
         <entry key="..\:/Users/leowa/OneDrive/Documents/tyvolunty/app/src/main/res/layout/item_info.xml" value="0.15885416666666666" />
         <entry key="..\:/Users/leowa/OneDrive/Documents/tyvolunty/app/src/main/res/layout/item_infom.xml" value="0.1828125" />
         <entry key="..\:/Users/leowa/OneDrive/Documents/tyvolunty/app/src/main/res/layout/item_mailm.xml" value="0.16" />
+        <entry key="..\:/Users/leowa/OneDrive/Documents/tyvolunty/app/src/main/res/layout/item_orga.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/leowa/OneDrive/Documents/tyvolunty/app/src/main/res/layout/list_calls_fragment.xml" value="0.2" />
         <entry key="..\:/Users/leowa/OneDrive/Documents/tyvolunty/app/src/main/res/layout/listallfrag.xml" value="0.2" />
+        <entry key="..\:/Users/leowa/OneDrive/Documents/tyvolunty/app/src/main/res/layout/listpending.xml" value="0.4" />
         <entry key="..\:/Users/leowa/OneDrive/Documents/tyvolunty/app/src/main/res/layout/progressbar.xml" value="0.15885416666666666" />
         <entry key="..\:/Users/leowa/OneDrive/Documents/tyvolunty/app/src/main/res/layout/toolbarprofile.xml" value="0.264" />
         <entry key="..\:/Users/leowa/OneDrive/Documents/tyvolunty/app/src/main/res/menu/buttom_navigation.xml" value="0.25416666666666665" />

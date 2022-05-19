@@ -19,12 +19,13 @@
         android:layout_height="?attr/actionBarSize"
         android:layout_gravity="start"
 
-        app:menu="@menu/menu1"
+
         >
         <include
             layout="@layout/item_bulle"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

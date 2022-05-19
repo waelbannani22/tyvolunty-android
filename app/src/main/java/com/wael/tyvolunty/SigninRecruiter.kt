@@ -69,7 +69,7 @@ class SigninRecruiter : AppCompatActivity() {
 
     private lateinit var txtPassword: TextInputEditText
 
-    private lateinit var txtForgetPassword: TextView
+
     private lateinit var txtDontHaveAccount: TextView
 
     private lateinit var btnLogin: MaterialButton
@@ -86,27 +86,25 @@ class SigninRecruiter : AppCompatActivity() {
         mSharedPref = getSharedPreferences(PREF_NAMER, MODE_PRIVATE);
 
         btnLogin = findViewById(R.id.btnLogin)
-        txtForgetPassword = findViewById(R.id.txtForgetPassword)
+
         txtDontHaveAccount = findViewById(R.id.txtDontHaveAccount)
         txtLayoutEmail = findViewById(R.id.txtLayoutEmail)
 
         txtEmail = findViewById(R.id.txtEmail)
-
+        btnLogin.isEnabled = true
         txtPassword = findViewById(R.id.txtPassword)
         spinner = findViewById(R.id.progress1)
         spinner.visibility = View.GONE
 
         btnLogin.setOnClickListener {
+
             doLogin()
         }
         txtSignUpR.setOnClickListener {
             val intent = Intent(this, SignupRecruiter::class.java)
             startActivity(intent)
         }
-        txtForgetPassword.setOnClickListener {
 
-
-        }
 
     }
     private fun doLogin(){
@@ -121,6 +119,7 @@ class SigninRecruiter : AppCompatActivity() {
             map["password"] = txtPassword.text.toString()
 
             CoroutineScope(Dispatchers.Main).launch {
+                btnLogin.isEnabled = false
 
                 apiInterface.signinRecruiter(map).enqueue(object : Callback<Recruiter> {
 
@@ -135,9 +134,9 @@ class SigninRecruiter : AppCompatActivity() {
                                 putString(IDR, user._id)
                                 putString(NAMER, user.name)
                                 putString(EMAILR, user.email)
-                                putString(DESCRIPTION, user.organization)
+                                putString(DESCRIPTION, user.organisation)
                                 putString(PHONER, user.phone)
-                                putString(PHOTOR, user.photo)
+                                putString(PHOTOR, "NO PICTURE")
 
 
                             }.apply()
@@ -147,6 +146,7 @@ class SigninRecruiter : AppCompatActivity() {
                             finish()
 
                         } else {
+                            btnLogin.isEnabled = true
                             spinner.visibility = View.GONE
                             Toast.makeText(
                                 this@SigninRecruiter,
@@ -159,6 +159,7 @@ class SigninRecruiter : AppCompatActivity() {
 
                     override fun onFailure(call: Call<Recruiter>, t: Throwable) {
                         spinner.visibility = View.GONE
+                        btnLogin.isEnabled = true
                         Toast.makeText(this@SigninRecruiter, "invalid email or password", Toast.LENGTH_SHORT).show()
                     }
 

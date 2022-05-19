@@ -28,10 +28,23 @@ class DetailCall : AppCompatActivity() {
         restonamedetail.setText(intent.getStringExtra("name").toString())
         description.setText(intent.getStringExtra("description").toString())
         mSharedPref = getSharedPreferences(PREF_NAME, MODE_PRIVATE);
-        val path = "https://firebasestorage.googleapis.com/v0/b/tyvolunty.appspot.com/o/images%2F2022_04_27_01_01_21?alt=media&token=73554f53-d1cd-4839-8543-f555c21406f1"
-        Glide.with(this)
-            .load(path)
-            .into(restodetail_img)
+        val filename = intent.getStringExtra("photo").toString()
+        val name =intent.getStringExtra("name").toString()
+        Log.e("filename====",filename)
+        if (filename == "null"){
+            Log.e("here====","heeree")
+            val path = "https://firebasestorage.googleapis.com/v0/b/tyvolunty.appspot.com/o/images%2F2022_04_27_01_01_21?alt=media"
+            Glide.with(this)
+                .load(path)
+                .into(restodetail_img)
+        }else{
+            Log.e("here====","yooooo")
+            val path = "https://firebasestorage.googleapis.com/v0/b/tyvolunty.appspot.com/o/images%2F$filename?alt=media&token=73554f53-d1cd-4839-8543-f555c21406f1"
+            Glide.with(this)
+                .load(path)
+                .into(restodetail_img)
+        }
+
         retour.setOnClickListener {
             finish()
         }
@@ -44,7 +57,7 @@ class DetailCall : AppCompatActivity() {
                 intent.putExtra("popupbtn", "OK")
 
             intent.putExtra("darkstatusbar", false)
-            intent.putExtra("name", intent.getStringExtra("name").toString())
+            intent.putExtra("name", name)
             intent.putExtra("description", intent.getStringExtra("description").toString())
             intent.putExtra("category", intent.getStringExtra("description").toString())
                 startActivity(intent)
@@ -78,6 +91,7 @@ class DetailCall : AppCompatActivity() {
                                 Toast.LENGTH_SHORT
                             ).show()
                             reserve.isEnabled = false
+                            reserve.setText("pending...")
 
 
                         }else{
@@ -86,6 +100,7 @@ class DetailCall : AppCompatActivity() {
                                 "already posted",
                                 Toast.LENGTH_SHORT
                             ).show()
+                            reserve.setText("already posted!!!")
                         }
                     }
 

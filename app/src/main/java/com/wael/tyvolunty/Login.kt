@@ -118,7 +118,7 @@ class Login : AppCompatActivity() {
             map["password"] = txtPassword.text.toString()
 
             CoroutineScope(Dispatchers.Main).launch {
-
+                btnLogin.isEnabled = false
                 apiInterface.login(map).enqueue(object : Callback<Volunteer> {
 
                     override fun onResponse(call: Call<Volunteer>, response: Response<Volunteer>) {
@@ -146,6 +146,7 @@ class Login : AppCompatActivity() {
 
                         } else {
                          spinner.visibility = View.GONE
+                            btnLogin.isEnabled = true
                             Toast.makeText(
                                 this@Login,
                                 "invalid email or password",
@@ -156,6 +157,8 @@ class Login : AppCompatActivity() {
                     }
 
                     override fun onFailure(call: Call<Volunteer>, t: Throwable) {
+                        btnLogin.isEnabled = true
+                        spinner.visibility = View.GONE
                         Toast.makeText(this@Login, "invalid email or password", Toast.LENGTH_SHORT).show()
                     }
 

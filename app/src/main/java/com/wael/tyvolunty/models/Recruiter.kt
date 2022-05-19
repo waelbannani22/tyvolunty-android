@@ -11,7 +11,7 @@ data class Recruiter (
     @SerializedName("email") val email :String,
 
     @SerializedName("photo") val photo :String,
-    @SerializedName("organization") val organization :String,
+    @SerializedName("organisation") val organisation :String,
     @SerializedName("description") val description :String,
     @SerializedName("phone") val phone :String,
     @SerializedName("token") val token :String,

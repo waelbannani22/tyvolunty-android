@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:theme="@style/Theme.ProfileUI"
+    android:background="@drawable/gradient"
     tools:context=".Accueil">
     <include layout="@layout/toolbarprofile"
         android:id="@+id/app_bar1"

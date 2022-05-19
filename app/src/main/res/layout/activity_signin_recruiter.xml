@@ -95,22 +95,7 @@
                 />
         </com.google.android.material.textfield.TextInputLayout>
 
-        <TextView
-            android:id="@+id/txtForgetPassword"
 
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-
-            android:layout_marginBottom="10dp"
-            android:layout_marginStart="150dp"
-            android:text="Forgot Password?"
-            android:textColor="@color/black"
-            android:textSize="20sp"
-            app:layout_constraintBottom_toTopOf="@+id/btnLogin"
-            app:layout_constraintEnd_toEndOf="parent"
-
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtLayoutPassword" />
 
         <TextView
             android:id="@+id/txtDontHaveAccount"
@@ -161,7 +146,7 @@
             android:textSize="18sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtForgetPassword" />
+            app:layout_constraintTop_toBottomOf="@+id/txtLayoutPassword" />
         <ProgressBar
             android:id="@+id/progress1"
             android:layout_width="80dp"

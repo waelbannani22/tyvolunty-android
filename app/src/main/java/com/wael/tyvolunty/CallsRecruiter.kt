@@ -2,14 +2,18 @@ package com.wael.tyvolunty
 
 import android.content.Intent
 import android.content.SharedPreferences
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import android.widget.LinearLayout
 import android.widget.Toast
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.bumptech.glide.Glide
+import com.google.android.material.snackbar.Snackbar
+
 
 import com.wael.tyvolunty.adapters.CallsAdapterRecruiter
 import com.wael.tyvolunty.utilis.ApiInterface
@@ -31,6 +35,8 @@ class CallsRecruiter : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_calls_recruiter)
         progBar.visibility = View.VISIBLE
+
+
         fab.visibility = View.GONE
         mSharedPref = getSharedPreferences(PREF_NAMER, MODE_PRIVATE);
         linearLayoutManager = LinearLayoutManager(this)
@@ -85,6 +91,7 @@ class CallsRecruiter : AppCompatActivity() {
                     }else{
                         progBar.visibility = View.GONE
                         fab.visibility = View.VISIBLE
+
                         Toast.makeText(this@CallsRecruiter, "no data", Toast.LENGTH_SHORT).show()
 
                     }
@@ -97,5 +104,15 @@ class CallsRecruiter : AppCompatActivity() {
 
 
         }
+    }
+    fun onSNACK(view: View){
+        //Snackbar(view)
+        val snackbar = Snackbar.make(view, "Replace with your own action",
+            Snackbar.LENGTH_LONG).setAction("Action", null)
+        snackbar.setActionTextColor(Color.BLUE)
+        val snackbarView = snackbar.view
+        snackbarView.setBackgroundColor(Color.LTGRAY)
+
+        snackbar.show()
     }
 }

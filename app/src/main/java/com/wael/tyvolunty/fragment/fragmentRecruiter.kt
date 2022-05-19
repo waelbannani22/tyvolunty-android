@@ -20,12 +20,14 @@ import kotlinx.android.synthetic.main.activity_accueil.*
 import kotlinx.android.synthetic.main.fragmentvolunteer.*
 import kotlinx.android.synthetic.main.item_add.*
 import kotlinx.android.synthetic.main.item_age.*
+import kotlinx.android.synthetic.main.item_age.age
 import kotlinx.android.synthetic.main.item_email.*
 import kotlinx.android.synthetic.main.item_image.*
 import kotlinx.android.synthetic.main.item_info.*
+import kotlinx.android.synthetic.main.item_orga.*
 import kotlinx.android.synthetic.main.toolbarprofile.*
 
-class fragmentvolunteer:Fragment(R.layout.fragmentvolunteer) {
+class fragmentRecruiter:Fragment(R.layout.fragment_recruiter) {
 
     private lateinit var mSharedPref: SharedPreferences
     override fun onCreateView(
@@ -34,7 +36,7 @@ class fragmentvolunteer:Fragment(R.layout.fragmentvolunteer) {
         savedInstanceState: Bundle?
     ): View? {
 
-        var rootView: View = inflater.inflate(R.layout.fragmentvolunteer, container, false)
+        var rootView: View = inflater.inflate(R.layout.fragment_recruiter, container, false)
 
         return rootView
 
@@ -56,29 +58,29 @@ class fragmentvolunteer:Fragment(R.layout.fragmentvolunteer) {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-       // (activity as AppCompatActivity?)!!.supportActionBar!!.hide()
-       refresh(context)
+        // (activity as AppCompatActivity?)!!.supportActionBar!!.hide()
+        refresh(context)
 
-        mSharedPref = requireContext().getSharedPreferences(PREF_NAME, AppCompatActivity.MODE_PRIVATE);
+        mSharedPref = requireContext().getSharedPreferences(PREF_NAMER, AppCompatActivity.MODE_PRIVATE);
 
         requireActivity().window.clearFlags( WindowManager.LayoutParams.FLAG_NOT_TOUCHABLE)
-        if(mSharedPref.getString(PHOTO, "").toString()=="NO PICTURE")
+        if(mSharedPref.getString(PHOTOR, "").toString()=="NO PICTURE")
         {
             profilePic22!!.setImageResource(R.drawable.avtar)
         }
         else
         {
-            val filename2 = mSharedPref.getString(PHOTO, "").toString()
+            val filename2 = mSharedPref.getString(PHOTOR, "").toString()
             Log.e("image",filename2)
             val path = "https://firebasestorage.googleapis.com/v0/b/tyvolunty.appspot.com/o/images%2F$filename2?alt=media"
             Glide.with(context)
                 .load(path)
                 .into(profilePic22)
         }
-        name.text = mSharedPref.getString(USERNAME, "").toString()
-        phone.text = mSharedPref.getString(PHONE, "").toString()
-        email.text = mSharedPref.getString(EMAIL, "").toString()
-        age.text = mSharedPref.getString(AGE, "").toString()
+        name.text = mSharedPref.getString(NAMER, "").toString()
+        phone.text = mSharedPref.getString(PHONER, "").toString()
+        email.text = mSharedPref.getString(EMAILR, "").toString()
+        oraganization.text = mSharedPref.getString(DESCRIPTION, "").toString()
 
         logout.setOnClickListener{
             val builder = AlertDialog.Builder(view.context)
@@ -86,8 +88,9 @@ class fragmentvolunteer:Fragment(R.layout.fragmentvolunteer) {
             builder.setMessage("Are you sure you want to logout ?")
             builder.setPositiveButton("Yes"){ dialogInterface, which ->
                 requireContext().getSharedPreferences(PREF_NAME, Context.MODE_PRIVATE).edit().clear().apply()
-                val intent = Intent(context,Login::class.java)
+                val intent = Intent(context,SigninRecruiter::class.java)
                 startActivity(intent)
+
 
 
             }
@@ -98,10 +101,7 @@ class fragmentvolunteer:Fragment(R.layout.fragmentvolunteer) {
 
 
         }
-        update.setOnClickListener{
-            val intent = Intent(context,MainActivity::class.java)
-            startActivity(intent)
-        }
+
 
 
 

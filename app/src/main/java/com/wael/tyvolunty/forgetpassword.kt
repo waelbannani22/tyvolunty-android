@@ -53,7 +53,7 @@ class forgetpassword : AppCompatActivity() {
         btnemail = findViewById(R.id.btnSend)
         txtcode.isEnabled = false
          btnconfirm = findViewById(R.id.btnConfirm)
-
+        btnconfirm.isEnabled=false
         //listners
         btnemail.setOnClickListener{
             dosend()
@@ -84,7 +84,12 @@ class forgetpassword : AppCompatActivity() {
 
                         if ( response.isSuccessful){
                            txtcode.isEnabled = true
-
+                            btnconfirm.isEnabled = true
+                            Toast.makeText(
+                                this@forgetpassword,
+                                "code sent",
+                                Toast.LENGTH_SHORT
+                            ).show()
                           //  Log.e("response", response.body()?.get("code").toString())
                             var z =  response.body()?.get("code").toString().length
                             var x = response.body()?.get("code").toString()
@@ -103,6 +108,11 @@ class forgetpassword : AppCompatActivity() {
 
                             }.apply()
                         }else{
+                            Toast.makeText(
+                                this@forgetpassword,
+                                "code not sent",
+                                Toast.LENGTH_SHORT
+                            ).show()
                             Log.e("response","error f")
                         }
                     }

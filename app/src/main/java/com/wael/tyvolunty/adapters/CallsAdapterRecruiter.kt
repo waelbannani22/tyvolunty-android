@@ -8,12 +8,13 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.wael.tyvolunty.DetailCall
+import com.wael.tyvolunty.DetailCallRecruiter
 import com.wael.tyvolunty.R
 import com.wael.tyvolunty.models.Calls
 import kotlinx.android.synthetic.main.listallfrag.view.*
 
-class CallsAdapter (var calls:MutableList<Calls>):
-    RecyclerView.Adapter<CallsAdapter.CallviewHolder>() {
+class CallsAdapterRecruiter (var calls:MutableList<Calls>):
+    RecyclerView.Adapter<CallsAdapterRecruiter.CallviewHolder>() {
     inner class CallviewHolder(itemView: View) : RecyclerView.ViewHolder(itemView)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CallviewHolder {
@@ -36,18 +37,21 @@ class CallsAdapter (var calls:MutableList<Calls>):
                     .load(path)
                     .into(resto_img)
             }
+
             // listner
             resto_name.setText(calls[position].name)
             taptores.setOnClickListener {
                 val activity = holder.itemView.context as Activity
-                val intent = Intent(activity, DetailCall::class.java)
+                val intent = Intent(activity, DetailCallRecruiter::class.java)
                 intent.putExtra("id",calls[position]._id)
                 intent.putExtra("name",calls[position].name)
                 intent.putExtra("picture",calls[position].photo)
                 intent.putExtra("description",calls[position].description)
-                intent.putExtra("photo",calls[position].photo)
-
+                intent.putExtra("accepted",calls[position].accepted)
+                intent.putExtra("pending",calls[position].pending)
+                intent.putExtra("declined",calls[position].declined)
                 activity.startActivity(intent)
+
             }
         }
     }

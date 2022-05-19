@@ -42,7 +42,7 @@
                         android:layout_height="30dp"
                         android:layout_marginLeft="10dp"
                         android:layout_marginTop="10dp"
-                        android:backgroundTint="@color/black"
+                        android:backgroundTint="@color/white"
                         android:src="@drawable/ic_arrow" />
 
                     <TextView
@@ -69,7 +69,7 @@
                 android:layout_height="match_parent"
                 android:orientation="horizontal"
                 android:layout_marginVertical="10dp"
-                android:weightSum="1">
+                android:weightSum="3">
 
 
 
@@ -85,17 +85,54 @@
                     android:orientation="vertical"
                     android:layout_weight="1">
 
-                    <ImageView
-                        android:id="@+id/qrcode"
-                        android:layout_width="match_parent"
-                        android:layout_height="33dp"
-                        android:src="@drawable/ic_baseline_qr_code_24" />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
                         android:gravity="center"
-                        android:text="qrcode"
+                        android:text="declined"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/declined"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:gravity="center"
+                        android:text="accepted"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/accepted"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:gravity="center"
+                        android:text="0"
                         android:textColor="@color/black"
                         android:textSize="14sp"
                         android:textStyle="bold" />
@@ -104,10 +141,34 @@
 
 
 
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
 
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:gravity="center"
+                        android:text="pending"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/pending"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
 
-
-
+                </LinearLayout>
 
 
             </LinearLayout>
@@ -119,8 +180,8 @@
                 android:layout_marginTop="10dp"
 
                 android:text="About"
-                android:textColor="@color/white"
-                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:textSize="25dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
@@ -139,11 +200,12 @@
                 app:layout_constraintHorizontal_bias="0.061"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView" />
+
             <Button
                 android:id="@+id/reserve"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Apply for the call"
+                android:text="Check applications"
                 android:layout_marginHorizontal="10dp"
                 android:textStyle="bold"
                 android:textSize="15sp"
@@ -154,7 +216,6 @@
                 app:layout_constraintHorizontal_bias="0.061"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/description" />
-
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

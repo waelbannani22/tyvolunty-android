@@ -23,7 +23,7 @@ class AccueilRecruiter : AppCompatActivity() {
         //setSupportActionBar(toolbar)
         mSharedPref = getSharedPreferences(PREF_NAMER, MODE_PRIVATE);
         //frag
-        val volunteer_Fragment = fragmentvolunteer()
+        val volunteer_Fragment = fragmentRecruiter()
         val blank = BlankFragment()
         val home = HomeRecruiter()
         val listcall = listCalls()
@@ -32,7 +32,7 @@ class AccueilRecruiter : AppCompatActivity() {
         setCurrentFragment(home)
         if(mSharedPref.getString(PHOTOR, "").toString()=="NO PICTURE")
         {
-            ProfilImg!!.setImageResource(R.drawable.wae)
+            ProfilImg!!.setImageResource(R.drawable.avtar)
         }
         else
         {
